@@ -2,6 +2,7 @@
 <view class="page {{themeColor}}" bindtap="setScreenOn">
 	<home wx:if="{{PageCur=='home'}}" bind:stateChange="stateChange" ScreenBrightness="{{ScreenBrightness}}" />
 	<sticky-notes wx:if="{{PageCur=='stickyNotes'}}" id="note"/>
+	<zanju wx:if="{{PageCur=='zanju'}}" id="zanju"/>
 	<chart wx:if="{{PageCur=='chart'}}"/>
 	<me wx:if="{{PageCur=='me'}}" bind:themeChange="themeChange" />
 </view>//主页
@@ -22,7 +23,7 @@
 	</cover-view>   
 	<cover-view class="action" bindtap="NavChange" data-cur="zanju">
 		<cover-view class='cuIcon-cu-image'>
-			<cover-image class='image' src="/images/pin{{PageCur=='zanju'?'_on':''}}.png"></cover-image>
+			<cover-image class='image' src="/images/pin{{PageCur=='zanju'?'':''}}.png"></cover-image>
 		</cover-view>
 		<cover-view class="text {{PageCur=='zanju'?'text-green':'text-black'}}">攒局</cover-view>
 	</cover-view>

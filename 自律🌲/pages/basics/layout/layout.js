@@ -1,4 +1,4 @@
-// components/me/poster/poster.js
+// pages/basics/layout/layout.js
 Page({
 
     /**

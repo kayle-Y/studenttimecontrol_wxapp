@@ -19,12 +19,7 @@
     <image src="cloud://tomato-lb031.746f-tomato-lb031-1302024354/wave.gif" mode="scaleToFill" class="gif-wave"></image>
   </view>
   <view class="cu-list menu card-menu margin-top-xl cardlist shadow-lg radius">
-    <view class="cu-item arrow">
-      <navigator class="content" url="/components/me/poster/poster" hover-class="none">
-        <text class="cuIcon-pic text-orange"></text>
-        <text class="text-grey">海报设置</text>
-      </navigator>
-    </view>
+  
     <view class="cu-item arrow">
       <navigator class="content"  bindtap="changeTheme" hover-class="none">
         <text class="cuIcon-colorlens text-cyan"></text>
@@ -56,8 +51,25 @@
         <text class="text-grey">意见反馈</text>
       </button>
     </view>  
-
-  
+    <view class="cu-item arrow">
+      <navigator class="content" url="/components/me/about/about" hover-class="none">
+        <text class="cuIcon-group_fill text-red"></text>
+        <text class="text-grey">绑定设置</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/components/me/about/about" hover-class="none">
+        <text class="cuIcon-link text-red"></text>
+        <text class="text-grey">个人情况</text>
+      </navigator>
+    </view>
+  	<view class="cu-item arrow">
+      <navigator class="content" url="/components/me/about/about" hover-class="none">
+        <image src="/images/pin.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">我的攒局</text>
+      </navigator>
+    </view>
+ 
 		<view class="cu-item arrow">
       <navigator class="content" url="/components/me/about/about" hover-class="none">
         <image src="/images/red_tomato.png" class="png" mode="aspectFit"></image>
@@ -65,6 +77,7 @@
       </navigator>
     </view>
   </view>
+
   <!-- <view class="cu-tabbar-height"></view> -->
 </view>
 <view class="cu-modal {{themeModal?'show':''}}">

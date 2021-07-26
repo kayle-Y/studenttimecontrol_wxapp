@@ -386,7 +386,7 @@ Component({
     columnChart.updateData({
         categories: this.data.chartData.main.categories,
         series: [{
-            name: '专注时长',
+            name: '自律时长',
             data: this.data.chartData.main.data,
             format: function (val, name) {
                 return (val).toFixed(0) + '';
@@ -409,7 +409,7 @@ touchHandler: function (e) {
       columnChart.updateData({
           categories: this.data.chartData.sub[index].categories,
           series: [{
-              name: '专注时长',
+              name: ' 自律时长',
               data: this.data.chartData.sub[index].data,
               format: function (val, name) {
                   return (val).toFixed(0) + '';
@@ -422,30 +422,39 @@ touchHandler: function (e) {
 /**
  * 拖动划窗
  */
-touchScrollHandler: function (e) {
-    lineChart.scrollStart(e);
-},
+/*touchScrollHandler: function (e) {
+   // lineChart.scrollStart(e);
+  //  columnChart.scrollStart(e);
+},*/
 /**
  * 划窗移动 
  */
 
-moveHandler: function (e) {
-    lineChart.scroll(e);
-},
+/*moveHandler: function (e) {
+   // lineChart.scroll(e);
+   // columnChart.scroll(e);
+},*/
 /**
  * 结束滑动
  */
-touchEndHandler: function (e) {
-    lineChart.scrollEnd(e);
-    lineChart.showToolTip(e, {
+/*touchEndHandler: function (e) {
+  //  lineChart.scrollEnd(e);
+   // columnChart.scrollEnd(e);
+    /*lineChart.showToolTip(e, {
         format: function (item, category) {
             return category + ' ' + item.name + ':' + item.data 
         }
-    });        
-},
+    });*/
+   /* columnChart.showToolTip(e, {
+        format: function (item, category) {
+            return category + ' ' + item.name + ':' + item.data 
+        }
+    });          
+},*/
 /**
  * 创建折线表数据
  */
+
 createSimulationData: function () {
     var categories = [];
     var data = [];
@@ -496,6 +505,7 @@ createSimulationData: function () {
             break;
     }
     
+    
     var logs = wx.getStorageSync('logs') || []
     for (var i = 0; i < days; i++) {
         categories.push(localTime.getFullYear()+'.'+(localTime.getMonth()+1)+'.' + (i + 1));
@@ -515,6 +525,8 @@ createSimulationData: function () {
         categories: categories,
         data: data
     }
-},
+} ,
   }
 })
+
+

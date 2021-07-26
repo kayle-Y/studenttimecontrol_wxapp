@@ -5,12 +5,13 @@
   border-radius: 10px;
   width: 90%;
   margin-top: 20px;
-  color: olive;
+  color: olive;/*累计专注/当日专注*/
   text-align: justify;
   line-height: normal;
  
   
 }
+/*累*/
 .card-title{
   display: block;
   margin-top: 3px;
@@ -23,6 +24,7 @@
   justify-content: space-between;
   margin-top: 3px;
 }
+/* 次数/时长/次均时长 文字*/
 .card-item{
   display: flex;
   flex-direction: column;
@@ -82,7 +84,7 @@ margin-top: 20px;
   font-weight: normal;
   font-size: small;
 } */
-
+/*本日专注时长 框*/
 .thisDay {
   background-color: white;
   height: 60%;
@@ -129,7 +131,7 @@ margin-top: 20px;
 } */
 
 .title {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
   position: relative;
   margin-top: 0rpx;
@@ -148,7 +150,9 @@ margin-top: 20px;
   display: block;
   height: 25%;
   transform: scale(0.8);
-  position: fixed;
+  position: absolute;
+  top: 800rpx;
+ 
   left: 0rpx;
 }
 
