@@ -4,7 +4,7 @@
 	<view slot="content">统计数据</view>
 </cu-custom> -->
 <cu-custom bgColor="{{themeColor}}">
-	<view slot="content" style="color:white;">番茄时钟</view>
+	<view slot="content" style="color:white;">自律时长统计</view>
 </cu-custom>
 <view class="contain">
 	<view class="card">

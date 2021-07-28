@@ -5,9 +5,9 @@
   <view class='text-content'>
     <view>Hi! 时间管理者们~欢迎使用时间管理小程序！</view>
     <view class='margin-top-sm'>长时间的使用手机会引起记忆力衰退、认知能力下降。不仅如此，手机还会让时间管理者们分心，使时间管理者们的工作效率受到影响。</view>
-    <view class='margin-top-sm'>该项目是不醒人工作室开发的旨在帮助大家暂时放下手机，专心于自己计划的效率的小程序。激励自己，抵御来自手机的诱惑。成为时间管理大师！
+    <view class='margin-top-sm'>该该应用能够实现家长与孩子之间的良好交互，帮助家长朋友更好的引导和管理孩子的手机使用情况，并根据大数据算法为孩子推送科学而合适的休息和锻炼方式。让孩子在家长的帮助下激励自己，抵御来自手机的诱惑。成为时间管理大师！
 </view>
-    <view class='margin-top-sm'>项目组成员：</view>
+    <view class='margin-top-sm'>       我们是浙江大学生仪学院暑期生产实习第三组，由队长钟华奇，队员田世超，袁致远，胡轶哲，丁心皓，牟思哲组成。此小程序为我们小组的最终成果，希望能给您带来全新的体验。</view>
     <view class='margin-top-sm'>该项目UI基于ColorUi开发      原作者：文晓港</view>
     <view class='margin-top-sm'>更多功能敬请期待！</view>
   </view>

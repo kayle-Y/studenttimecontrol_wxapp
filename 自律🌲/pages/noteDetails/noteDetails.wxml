@@ -10,4 +10,13 @@
 		</view>
 		<textarea class="textStyle" maxlength="{{limit}}" value="{{Notes[currentLoc].value}}" bindblur="storeNote" bindconfirm="storeNote" bindinput="calWords"></textarea>
 	</view>
+
+	<view class="cu-form-group">
+		<view class="title">任务已完成</view>
+		
+		<view class="body-view">
+                <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+            </view>
+	</view>
+
 </view>

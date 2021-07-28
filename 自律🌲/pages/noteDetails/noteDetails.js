@@ -87,7 +87,7 @@ Page({
     var pages = getCurrentPages()
     var prevPage = pages[pages.length - 2]
     var pNote = prevPage.selectComponent('#note')
-    pNote.updateCached()
+    pNote.ched()
   },
 
   getNeedData: function () {
