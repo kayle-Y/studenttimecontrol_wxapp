@@ -1,0 +1,20 @@
+<!--components/stickyNotes/stickyNotes.wxml-->
+
+	<cu-custom bgColor="{{themeColor}}" isBack="{{true}}">
+		<view slot="backText">返回</view>
+		<view slot="content">详细信息</view>
+	</cu-custom>
+
+	<view class="cu-timeline pureWhite" style="margin-bottom:40px;z-index:-1;">
+		<block wx:for="{{Notes}}" wx:key="index">
+			<view class="{{Notes[index].iconStyle}} text-{{Notes[index].cardStyle}}" bindlongpress="lockNote" data-id="{{index}}">
+				<view class="content bg-{{Notes[index].cardStyle}} shadow-blur animation-{{Notes[index].noteShake?'shake':''}}" bindtap="{{Notes[index].lock?'shakeNote':'showCuNote'}}" data-id="{{index}}">
+					{{Notes[index].value}}
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class="hoverButton"  bindtap="addInput">New</view>
+
+
+

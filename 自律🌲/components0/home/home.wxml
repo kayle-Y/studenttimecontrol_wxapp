@@ -1,0 +1,9 @@
+
+<image
+    class="po" src="/images/学业顺利智1慧树.png" >
+    </image>
+
+
+<button class="btn1" size="mini" type="primary" bindtap="goto1">+</button>
+<button class="btn2" size="mini" type="primary" bindtap="goto2">+</button>
+<button class="btn3" size="mini" type="primary" bindtap="goto3">+</button>

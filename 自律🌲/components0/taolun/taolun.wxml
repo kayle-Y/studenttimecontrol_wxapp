@@ -1,0 +1,21 @@
+<view class="nav">
+<block wx:for="{{styles}}" wx:key="styles">
+<view class="{{ item.class }}" date-index="{{index}}" bind:tap="tab">
+  <text class="card-title">{{item.text}}</text>
+</view>
+</block>
+</view>
+<view class="card">
+<swiper circular="{{true}}" current="{{ index }}" bind:change="changetab">
+<swiper-item>
+<view class="cnt">吐槽</view>
+</swiper-item>
+<swiper-item>
+<view class="cnt" >打卡</view>
+</swiper-item>
+<swiper-item>
+<view class="cnt">专家答疑</view>
+</swiper-item>
+</swiper>
+</view>
+<view class="hoverButton" hover-class="plus" bindtap="addInput">New</view>
