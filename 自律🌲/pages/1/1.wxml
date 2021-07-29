@@ -1,0 +1,25 @@
+<cu-custom bgColor="{{themeColor}}" isBack="{{true}}">
+		<view slot="backText">返回</view>
+		<view slot="content">温馨提示</view>
+	</cu-custom>
+<image class="a" src="/images/自制力.png"></image>
+<view class="contain">
+<view class="card">
+<view class="card-title">1、目标要具体化 </view>
+<view class="item-title">
+	自制力不强的孩子一般都会出现“学习问题”，而学习对一个人的未来，又是不可缺少的。 但电视、网络、吃零食之类的事情对小孩子来讲具有一种无法抗拒的力量，加之大多数父母们在“事后”才发现孩子的自制力差的问题而加以管教，所以就需要父母想办法，把一些长远的目标具体化，增强它们的激励性。
+</view>
+</view>
+<view class="card1">
+<view class="card-title">2、父母做出自我约束的榜样 </view>
+<view class="item-title">
+	孩子是否有自我约束的能力，首先取决于父母。 当孩子看到父母能很好控制自己的言行，他也会效仿。 通过家庭的熏陶，可以让孩子受到潜移默化的影响，遇到任何问题时会首先约束自己。
+</view>
+</view>
+<view class="card2">
+<view class="card-title">3、给孩子自由决定的空间 </view>
+<view class="item-title">
+	要想让孩子自我约束，必须留给他自由做决定的空间，让他决定自己的时间如何安排，父母只能以心平气和的态度，在事后和孩子讨论还有什么改进的余地。 这至少能保证一点，即孩子能充分理解父母的心意，不会产生抵触情绪。
+</view>
+</view>
+</view>

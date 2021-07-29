@@ -11,15 +11,21 @@ Page({
     words: '*',
     limit: 180
   },
+  data1: {
+    id: ""
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     //获取主题色
-     this.setData({
-      themeColor:wx.getStorageSync('themeColor')
+    //获取主题色
+    this.setData({
+      themeColor: wx.getStorageSync('themeColor')
     })
+    //调试：
+    this.data1.id = options.id
+    // console.log('传递的id1:',options.id,this.data1.id)
   },
 
   /**
@@ -105,10 +111,11 @@ Page({
     }
   },
 
-  deleteNote: function () {
+  deleteNote: function (options) {
     // 点击删除图标触发
     var loc = this.data.currentLoc
     var notes = this.data.Notes
+    // console.log('传递的id2:',this.data1.id)
     if (loc !== 0 && notes[loc - 1].iconStyle === "cu-time") {
       // 如果该天标签都被删除则删除时间项
       if (notes.length - 1 === loc || notes[loc + 1].iconStyle === "cu-time") {
@@ -120,12 +127,51 @@ Page({
       notes.splice(loc, 1)
     }
 
+    //删除便签数据
+    wx.cloud.database().collection('note')
+      .doc(this.data1.id) //删除第index条数据
+      .remove() //删除数据
+      // .get()
+      .then(res => {
+        console.log('删除成功', this.data1.id)
+      })
+      .catch(err => {
+        console.log('删除失败', err)
+      })
+
     wx.setStorageSync('Notes', notes)
     //缓存并更新标签数据，返回标签列表
     this.updatePrev()
     wx.navigateBack({
       delta: 1
     })
-  }
+  },
+
+  onlocationtap:function(){
+    wx.getSetting({
+      successs: res =>{
+        const islocation = res.authSetting['Scope.userLocation'];
+        if(islocation){
+          wx.chooseLocation({
+           success: res=>{
+             console.log(res);
+           }
+          })
+
+        }else{
+          wx.authorize({
+            scope: "scope.userLocation",
+            success: res=>{
+             wx.chooseLocation({
+               success: res=>{
+                 console.log(res);
+               }
+              })
+            }
+          })
+        }
+      }
+    })
+ },
 
 })

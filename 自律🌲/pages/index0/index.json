@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "home":"/components0/home/home",
+    "q":"/components0/q/q",
+    "cu-custom": "/colorui/components/cu-custom",
+    "qktzh":"/components0/qktzh/qktzh",
+    "me":"/components0/me/me/me",
+    "taolun":"/pages/topics/topics"
+  }
+}

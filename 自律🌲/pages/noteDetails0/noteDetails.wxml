@@ -8,21 +8,6 @@
 		<view class="noticeStyle">
 			<view class="cu-item cuIcon-delete text-blue" bindtap="deleteNote" style="padding-right:10rpx"></view>字数：{{words}}/{{limit}}
 		</view>
-
-		<view class="LocationStyle">
-			<view class="cu-item cuIcon-location text-blue" bindtap="onlocationtap" style="padding-right:10rpx">位置</view>
-			<input style="margin-top:20px" maxlength="10" placeholder="最大输入长度10" />
-		</view>	
-
 		<textarea class="textStyle" maxlength="{{limit}}" value="{{Notes[currentLoc].value}}" bindblur="storeNote" bindconfirm="storeNote" bindinput="calWords"></textarea>
 	</view>
-
-	<view class="cu-form-group">
-		<view class="title">任务已完成</view>
-		
-		<view class="body-view">
-                <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
-            </view>
-	</view>
-	<view class="hoverButton" hover-class="plus">发布</view>
 </view>

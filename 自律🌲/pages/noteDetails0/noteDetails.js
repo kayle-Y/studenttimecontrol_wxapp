@@ -9,11 +9,7 @@ Page({
     currentLoc: 0,
     Notes: [],
     words: '*',
-    limit: 140,
-    dizhi:'*'
-  },
-  data1: {
-    id: ""
+    limit: 180
   },
 
   /**
@@ -24,9 +20,6 @@ Page({
      this.setData({
       themeColor:wx.getStorageSync('themeColor')
     })
-    //调试：
-    this.data1.id = options.id
-    // console.log('传递的id1:',options.id,this.data1.id)
   },
 
   /**
@@ -103,10 +96,7 @@ Page({
     )
     this.setData({
       Notes: cachedNotes,
-      currentLoc: wx.getStorageSync('currentLoc'),
-      dizhi: wx.getLocation({
-        altitude: 'altitude',
-      })
+      currentLoc: wx.getStorageSync('currentLoc')
     })
     if (this.data.Notes[this.data.currentLoc].iconStyle === "cu-time") {
       this.setData({
@@ -130,55 +120,12 @@ Page({
       notes.splice(loc, 1)
     }
 
-    //删除便签数据
-    wx.cloud.database().collection('note')
-      .doc(this.data1.id) //删除第index条数据
-      .remove() //删除数据
-      // .get()
-      .then(res => {
-        console.log('删除成功', this.data1.id)
-      })
-      .catch(err => {
-        console.log('删除失败', err)
-      })
-
     wx.setStorageSync('Notes', notes)
     //缓存并更新标签数据，返回标签列表
     this.updatePrev()
     wx.navigateBack({
       delta: 1
     })
-  },
-  onlocationtap:function(){
-     wx.getSetting({
-       successs: res =>{
-         const islocation = res.authSetting['Scope.userLocation'];
-         if(islocation){
-           wx.chooseLocation({
-            success: res=>{
-              console.log(res);
-            }
-           })
-
-         }else{
-           wx.authorize({
-             scope: "scope.userLocation",
-             success: res=>{
-              wx.chooseLocation({
-                success: res=>{
-                  console.log(res);
-                }
-               })
-             }
-           })
-         }
-       }
-     })
-  },
-
- 
- 
+  }
 
 })
-
-
