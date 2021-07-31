@@ -1,0 +1,30 @@
+<!--components/me/about/about.wxml-->
+<cu-custom bgColor="{{themeColor}}" isBack="{{true}}"><view slot="backText">保存并返回</view><view slot="content">individual</view></cu-custom>
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp270977273.jpg&refer=http%3A%2F%2Fimg3.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1630050711&t=feda5354075c3f17d35fa09f6b9b50c8');height: 1414rpx;">
+<view class='"padding-xl text-white"'>
+  <view class='text-center margin-bottom text-lg  text-yellow'>个人情况🌲</view>
+  <view class='text-content'>
+    <view>小程序将根据您的个人情况提供个性化的锻炼建议哦</view>
+    <view> </view>
+    <view class='margin-top-sm'>（在下框内输入自己的身高/体重/年龄等信息）</view>
+    <input style="margin-top:20px" maxlength="10" placeholder="在此处输入你的身高/cm" />
+    <view>身高</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+
+    <input style="margin-top:20px" maxlength="10" placeholder="在此处输入你的体重/kg" />
+    <view>体重</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+
+    <input style="margin-top:20px" maxlength="10" placeholder="在此处输入你的年龄" />
+    <view>年龄</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+
+  </view>
+</view>
+</view>

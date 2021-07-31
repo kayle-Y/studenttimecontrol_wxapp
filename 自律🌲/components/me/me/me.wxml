@@ -34,10 +34,10 @@
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <view class="content" bindtap="showQrcode">
+      <navigator class="content" url="/components/me/choujiang/choujiang">
         <text class="cuIcon-moneybagfill text-red"></text>
         <text class="text-grey">抽奖商城</text>
-      </view>
+      </navigator>
     </view>
     <view class="cu-item arrow">
       <view class="content" bindtap="showQrcode">
@@ -52,13 +52,13 @@
       </button>
     </view>  
     <view class="cu-item arrow">
-      <navigator class="content" url="/components/me/about/about" hover-class="none">
+      <navigator class="content" url="/components/me/bind/bind" hover-class="none">
         <text class="cuIcon-group_fill text-red"></text>
         <text class="text-grey">绑定设置</text>
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/components/me/about/about" hover-class="none">
+      <navigator class="content" url="/components/me/individual/individual" hover-class="none">
         <text class="cuIcon-link text-red"></text>
         <text class="text-grey">个人情况</text>
       </navigator>
@@ -76,7 +76,16 @@
         <text class="text-grey">关于自律🌲</text>
       </navigator>
     </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/index0/index0" hover-class="none">
+        <text class="cuIcon-order text-red"></text>
+        <text class="text-grey">切换账号</text>
+      </navigator>
+    </view>
   </view>
+ 
+
+
 
   <!-- <view class="cu-tabbar-height"></view> -->
 </view>

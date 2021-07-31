@@ -1,0 +1,31 @@
+<!--components/me/about/about.wxml-->
+<cu-custom bgColor="{{themeColor}}" isBack="{{true}}"><view slot="backText">保存并返回</view><view slot="content">绑定设置</view></cu-custom>
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201510%2F09%2F20151009174502_4Fvt3.thumb.400_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1630050979&t=62856af7690b10d325bc7a9329efd35a');height: 1414rpx;">
+<view class='"padding-xl text-white"'>
+  <view class='text-center margin-bottom text-lg  text-yellow'>说明</view>
+  <view class='text-content'>
+    <view>该功能还在维护中</view>
+    <view> </view>
+    <view class='margin-top-sm'>（在下框内输入相关信息）</view>
+    <input style="margin-top:20px" maxlength="15" placeholder="在此处输入你的身份证号" />
+    <view>身份证号</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+
+    <input style="margin-top:20px" maxlength="6" placeholder="在此处输入你的姓名" />
+    <view>姓名</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+
+    <input style="margin-top:20px" maxlength="10" placeholder="在此处输入监护人身份证号" />
+    <view>监护人身份证号</view>
+    <view> </view>
+    <view> </view>
+    <view> </view>
+    <input style="margin-top:20px" maxlength="10" placeholder="在此处输入监护人姓名" />
+    <view>监护人姓名</view>
+  </view>
+</view>
+</view>

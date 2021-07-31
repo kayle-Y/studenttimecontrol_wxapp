@@ -29,14 +29,14 @@
 			<view class="{{Notes[index].iconStyle}} text-{{Notes[index].cardStyle}}" bindlongpress="lockNote"
 				data-id="{{index}}">
 				<view
-					class="content bg-{{Notes[index].cardStyle}} shadow-blur animation-{{Notes[index].noteShake?'shake':''}}"
-					bindtap="{{Notes[index].lock?'shakeNote':'showCuNote'}}" data-id="{{index}}">
+					class="content bg-{{Notes[index].cardStyle}} shadow-blur"
+					bindtap="{{Notes[index]}}" data-id="{{index}}">
 					{{Notes[index].value}}
 				</view>
 			</view>
 		</block>
 	</view>
-	<view class="hoverButton" hover-class="plus" bindtap="addInput">创建</view>
+	<view wx:for="{{Notes}}" wx:key="index" class="hoverButton" hover-class="plus" bindtap="addInput" data-id="{{index}}">创建</view>
 
 
 </view>
