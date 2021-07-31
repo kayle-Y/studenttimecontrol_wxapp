@@ -1,0 +1,41 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">进行锻炼</view>
+</cu-custom>
+
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F20%2F20170720235325_kZ2tA.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1630311226&t=e619a659ccfa8e1abe16f1c93fa1f197');height: 1414rpx;;">
+  
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      今日手机时间到上限了哦，要不要选择进行锻炼锻炼，活动活动筋骨呢？
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">   
+        <button class="cu-btn bg-green margin-left" bindtap="showModal2">可以</button>
+        <button class="cu-btn line-green text-green" bindtap="showModal1">不要</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-modal  {{modalName=='DialogModal2'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">温馨提示</view>
+      <view class="action" bindtap="showModal3">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      恭喜你完成锻炼，抽奖机会+1。
+    </view>
+  </view>
+</view>
+</view>

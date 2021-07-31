@@ -77,7 +77,7 @@
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/index0/index0" hover-class="none">
+      <navigator class="content" url="/pages/index0/index" hover-class="none">
         <text class="cuIcon-order text-red"></text>
         <text class="text-grey">切换账号</text>
       </navigator>

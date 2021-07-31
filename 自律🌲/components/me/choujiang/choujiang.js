@@ -37,17 +37,17 @@ Page({
       })
     }
     if(that.data.random < 30 || 330 < that.data.random){
-      name = '一等奖'
+      name = '60分钟，恭喜你欧皇'
     }else if(that.data.random > 30 && that.data.random < 90){
-      name = '二等奖'
+      name = '30分钟'
     }else if(that.data.random > 90 && that.data.random < 150){
-      name = '三等奖'
+      name = '15分钟'
     }else if(that.data.random > 150 && that.data.random < 210){
-      name = '四等奖'
+      name = '10分钟'
     }else if(that.data.random > 210 && that.data.random < 270){
-      name = "五等奖"
+      name = "5分钟"
     }else{
-      name = "六等奖"
+      name = "1分钟，再接再厉吧"
     }
     let b = setInterval(function () {
       that.setData({

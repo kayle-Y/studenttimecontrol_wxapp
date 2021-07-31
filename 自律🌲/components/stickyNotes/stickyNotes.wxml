@@ -1,7 +1,7 @@
 <!--components/stickyNotes/stickyNotes.wxml-->
 <view class="page pureWhite">
 	<cu-custom bgColor="{{themeColor}}">
-		<view slot="content" style="color:white;">今日日程</view>
+		<view slot="content" style="color:white;">攒局</view>
 	</cu-custom>
 
 	<view class="cu-bar search bg-white">

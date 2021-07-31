@@ -2,5 +2,10 @@
 <view wx:if="{{show}}" class="timer_progress_mask"></view>
   <view wx:if="{{show}}" class='timeText'>{{countDownHour}}:{{countDownMinute}}:{{countDownSecond}}</view>
 
-
-
+  <view wx:if="{{(countDownHour=='00')&&(countDownMinute=='00')&&(countDownSecond=='00')}}"class="hoverButton"
+  ><navigator class="content" url="/pages/A/A" hover-class="none">
+        <text class="cuIcon-order text-red"></text>
+        <text class="text-grey">锻炼</text>
+      </navigator>
+    </view>
+  

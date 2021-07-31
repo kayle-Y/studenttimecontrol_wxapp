@@ -4,7 +4,7 @@
   <view class="page pureWhite">
 	  <cu-custom bgColor="{{themeColor}}" isBack="{{true}}">
 	    <view slot="backText" style="color:white;" bindtap="hideLogs">返回</view>
-	  	<view slot="content" style="color:white;">番茄历史</view>
+	  	<view slot="content" style="color:white;">专注历史</view>
 	  </cu-custom>
   </view>
   <view wx:if="{{isLogs}}">
